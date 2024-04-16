@@ -1,0 +1,173 @@
+/* Gehele Body */
+/* ---------------- */
+body {
+  margin: 0;
+  padding: 0;
+  color: rgba(var(--light-blue-inset), 1);
+  font-family: sans-serif;
+}
+
+
+
+
+
+
+
+
+
+/* Basis img instelling */
+/* ----------------------------- */
+img {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+/* Algemene button */
+/* --------------------- */
+button {
+  background-color: rgba(0, 111, 207);
+  border-radius: 0.75rem;
+  border-style: none;
+
+  font-size: 1em;
+
+  color: white;
+}
+
+button:hover {
+  background-color: rgba(var(--light-blue-inset / 40%), 1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Header voor bijde pagina's */
+/* ----------------------------- */
+header {
+  height: 38em;
+}
+
+header article {
+  z-index: 1;
+  position: relative;
+  bottom: 16em;
+  
+  padding: 0 20em;
+
+  display: flex;
+  flex-direction: column;
+  max-height: 80vh;
+  overflow-y: auto;
+
+  color: white;
+}
+
+
+@media screen and (max-width: 1100px) {
+  header article {
+    padding: 0 15px; 
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  header article {
+    padding: 0 10px;
+  }
+}
+
+
+header article h1 {
+  font-size: 1.4em;
+  font-weight: bolder;
+}
+
+header article p {
+  margin-top: -.8rem;
+  font-size: 2em;
+  font-weight: 100;
+}
+
+header img {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 24em;
+  object-fit: cover;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.25);
+  z-index: -1;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Links (Inclussief cursor opties voor navigatie en duidelijkheid)  */
+/* -------------------------------------------------------------------*/
+a {
+  text-decoration: none;
+  color: rgba(var(--light-blue-inset), 1);
+}
+
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+/* Root */
+/* ----------------------------- */
+:root{
+  /* Color insets */
+  --light-blue-inset: 0, 111, 207;
+  --dark-blue-inset: 0, 23, 90;
+  --gr1-inset:247, 248, 249;
+  --gr2-inset:236, 237, 238;
+  --gr5-inset:83, 86, 90;
+  --wh-inset:255, 255, 255;
+  /* Colors */
+  --light-blue: rgba(var(--light-blue-inset), 1);
+  --dark-blue: rgba(var(--dark-blue-inset), 1);
+  --gr1:rgba(var(--gr1-inset), 1);
+  --gr2:rgba(var(--gr2-inset), 1);
+  --gr5:rgba(var(--gr5-inset), 1);
+  --bl:rgb(0, 0, 0);
+  --wh:rgb(255, 255, 255);
+  /* Transitions */
+  --an1: all 300ms ease-in-out;
+  --an2: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  /* Shadows */
+  --box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.25);
+  --small-box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
+  /* Border radius */
+  --br-small:0.25rem;
+  --br-large:0.75rem;
+}

@@ -1,0 +1,225 @@
+/* Header */
+/* --------------- */
+header {
+    height: 23em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Main*/
+/* --------------- */
+main {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Linker kant van de Main*/
+/* -------------------------- */
+main article {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 20em;
+
+    padding: 3em;
+
+    text-align: center;
+
+    background-image: linear-gradient(to right, rgba(var(--dark-blue-inset), 1), rgba(var(--light-blue-inset), 1));
+}
+
+main article h2 {
+    font-size: 2em;
+    color: white;
+}
+
+main article button {
+    height: 5em;
+}
+
+main article a {
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Rechterkant van de Main*/
+/* -------------------------- */
+main ul {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+
+    list-style: none;
+}
+
+main ul li h2 {
+    font-size: 2em;
+}
+
+/* Specefieke voor eerste */
+main ul li:nth-child(1)  h2:nth-child(1) {
+    text-align: center;
+    font-size: 4em;
+    color: black;
+}
+
+/* Specefieke voor eerste */
+main ul li:nth-child(1) p:nth-child(2) {
+    padding-right: 1em;
+
+    font-size: 2em;
+    text-align: center;
+    color: black;
+}
+
+main ul li p {
+    font-size: 1.4em;
+    max-width: 80ch;
+}
+
+/* Specefieke Foto's/Iconenen Lijst*/
+ul li img:nth-child(1) {
+    height: 7em;
+    width: 7em;
+}
+
+/* Specefieke uitlijningnen Lijst*/
+main ul li:nth-child(5) {
+    display: flex;
+    flex-direction: row-reverse;
+
+    padding-right: 10em;
+}
+
+main ul li:nth-child(5) div {
+    padding-top: 8em ;
+}
+
+main ul li:nth-child(5) img{
+    height: 20em;
+    width: 30em;
+
+}
+
+main ul li:nth-child(6) {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+main ul li:nth-child(6) div {
+    padding-top: 8em;
+    padding-right: 8em;
+}
+
+
+main ul li:nth-child(6) img{
+    height: 30em;
+    width: 30em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Na de Main, Idk wat voor template*/
+/* ---------------------------------------- */
+section {
+    padding-top: 8em;
+    text-align: center;
+}
+
+section ul {
+    padding: 0 12em;
+    text-align: center;
+}
+  
+section ul li {
+    padding-left: 1em;
+    list-style: none;
+}
+  
+section ul li::before {
+    content: '\2022'; 
+    width: 1em; 
+    margin-left: -1em; 
+}
+
+section img {
+    width: 14em;
+}
+  
+
+
+
+
+
+
+
+
+
+
+/* Laatste template voor mijn pagina*/
+/* --------------- */
+ul:nth-child(4) {
+    padding-top: -2em;
+    padding: 5em 25%;
+    height: 18em;
+
+    display: flex;
+    flex-direction: row;
+    gap: 8em; 
+
+    list-style: none;
+}
+
+ul:nth-child(4) img {
+    width: 12em;
+}

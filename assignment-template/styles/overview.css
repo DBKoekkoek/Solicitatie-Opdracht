@@ -1,0 +1,138 @@
+/* body */
+/* --------------- */
+  body {
+      background-color: rgb(240, 240, 240);
+  }
+    
+
+
+
+
+
+
+
+
+
+/* API */
+/* --------------- */  
+  main article {
+    position: relative;
+    bottom: 20em;
+    left: 10%;
+
+    margin: 1.6em 5em;
+    width: 70%;
+  
+    display: flex;
+    background-color: white;
+  }
+  
+  main article div img {
+    margin: 1.5em;
+    width: 20em;
+  }
+  
+
+
+
+
+
+
+
+  
+
+/* Eerste deel van de informatie */
+/* --------------------------------------- */
+  main section {
+    width: 25em;
+  }
+  
+  main section p {
+    margin-top: -.9rem;
+  
+    font-size: 1.2em;
+    line-height: 1.3em;
+  }
+  
+  main section a {
+    margin-top: -1.6rem;
+  }
+  
+  
+  /* Iconenen Lijst */
+  main ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  
+  main ul li {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+  }
+  
+  main ul li img {
+    width: 4em;
+  }
+
+
+  /* Scherm verkleining */
+  @media screen and (max-width: 1031px) {
+    main {
+      position: relative;
+      bottom: 14em;
+      text-align: center;
+    }
+  
+    main article {
+      position: relative;
+      bottom: auto;
+      left: auto;
+      margin: 1.6em 1em;
+  
+      width: 90%;
+  
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+    }
+  
+    main article div img {
+      margin: 1em auto;
+      width: 100%; 
+      max-width: 20em; 
+    }
+  
+    main section {
+      width: 100%;
+    }
+  
+    main section p {
+      margin-top: -.9rem;
+      font-size: 1em;
+      line-height: 1.3em;
+    }
+  
+    main section a {
+      margin-top: -1.6rem;
+    }
+  
+    /* Iconen en lijst */
+    main ul {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+    }
+  
+    main ul li {
+      display: flex;
+      flex-direction: row;
+      gap: 1em;
+    }
+  
+    main ul li img {
+      width: 4em;
+    }
+  }
+  
